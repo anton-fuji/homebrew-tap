@@ -11,7 +11,7 @@ class Dibo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "45c2d51b1e5ae2ca0d40c6f366691220f861e57e7c972cb0ae35027d33892075"
+      sha256 "d44dee3d63e3edcf0392dd511fff81db97c8bdddb47e60d1a2e21b07c8fc7dc0"
 
       def install
         bin.install "dibo"
@@ -19,7 +19,7 @@ class Dibo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "983cc6d3f2bc34a784ec29f5cf417deee9cf74e09b030c7892a5695f1246a256"
+      sha256 "6ed53208453b16c22b9bdbe16cb2634cd441245538dce6883a6a72cae31b8d45"
 
       def install
         bin.install "dibo"
@@ -30,14 +30,14 @@ class Dibo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "d06cf2dc32573d97397659337fe5a5cca61b469622748ceca4e15b6a24f4a21a"
+      sha256 "04e6076dd949d47fdaeb7b87bb9c4345c53ecaee94ad29e973405db4234ee2fe"
       def install
         bin.install "dibo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Linux_arm64.tar.gz"
-      sha256 "71cc23325badb5773a48b92927a544a11f5155a33b61d04c05fc32a4e0ba70f6"
+      sha256 "bd40f5f7ab2d3d2ae45e265dd8ebf328672b7871832ab5da015c86fb3603e8cc"
       def install
         bin.install "dibo"
       end
