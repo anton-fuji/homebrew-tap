@@ -5,21 +5,21 @@
 class Dibo < Formula
   desc "A CLI tool for generating .dockerignore files from templates"
   homepage "https://github.com/anton-fuji/dibo"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "d44dee3d63e3edcf0392dd511fff81db97c8bdddb47e60d1a2e21b07c8fc7dc0"
+      url "https://github.com/anton-fuji/dibo/releases/download/v0.2.0/dibo_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "ce5917dbfbd264f14c65ab5a81c2175878d0ef39b9a5b943dfc5048d63418b4c"
 
       def install
         bin.install "dibo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "6ed53208453b16c22b9bdbe16cb2634cd441245538dce6883a6a72cae31b8d45"
+      url "https://github.com/anton-fuji/dibo/releases/download/v0.2.0/dibo_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "b9d161825d90350079e99080d1155cf45144d5c0d59d6320c8af6859a826c507"
 
       def install
         bin.install "dibo"
@@ -29,15 +29,15 @@ class Dibo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "04e6076dd949d47fdaeb7b87bb9c4345c53ecaee94ad29e973405db4234ee2fe"
+      url "https://github.com/anton-fuji/dibo/releases/download/v0.2.0/dibo_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "2a40605b9ef28f24290da5da1edbc2c3cdb44d2e8eacdae61d195be5c06c3957"
       def install
         bin.install "dibo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anton-fuji/dibo/releases/download/v0.1.0/dibo_0.1.0_Linux_arm64.tar.gz"
-      sha256 "bd40f5f7ab2d3d2ae45e265dd8ebf328672b7871832ab5da015c86fb3603e8cc"
+      url "https://github.com/anton-fuji/dibo/releases/download/v0.2.0/dibo_0.2.0_Linux_arm64.tar.gz"
+      sha256 "4b3f8508075976d891f53ef124ac86b1737fcaf30b6863821df7ffc612dc9c85"
       def install
         bin.install "dibo"
       end
